@@ -24,10 +24,9 @@ function onPageReload(e) {
   const savedInfo = localStorage.getItem(FEEDBACK);
   if (savedInfo) {
     const saveInfoObj = JSON.parse(savedInfo);
-    console.log(saveInfoObj);
+    // console.log(saveInfoObj);
     formRef.querySelector('input').value = saveInfoObj.userEmail;
     formRef.querySelector('textarea').value = saveInfoObj.userMessage;
-    console.log('yes');
   }
 }
 
